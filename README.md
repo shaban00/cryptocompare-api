@@ -266,7 +266,7 @@ docker run --publish 8080:8080 docker-gs-ping
 
 ```bash
 
-docker pull shaban00/cryptocompare-api:1.0.0
+docker pull shaban00/cryptocompare-api:latest
 
 docker run --publish 4000:4000 shaban00/cryptocompare-api
 
