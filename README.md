@@ -61,6 +61,8 @@
 
 URL: http://localhost:4000/api/v1/price
 
+Request Method: [__GET__]
+
 Query parameters:
 
 Paramters | Type | Required
@@ -81,6 +83,8 @@ sign | boolean | No
 
 URL: http://localhost:4000/api/v1/pricemulti
 
+Request Method: [__GET__]
+
 Query parameters:
 
 Paramters | Type | Required
@@ -100,6 +104,8 @@ sign | boolean | No
 
 URL: http://localhost:4000/api/v1/pricemultifull
 
+Request Method: [__GET__]
+
 Query parameters:
 
 Paramters | Type | Required
@@ -115,7 +121,7 @@ sign | boolean | No
 `Eg: http://localhost:4000/api/v1/pricemultifull?fsyms=BTC&tsyms=USD,EUR`
 
 
-## Socket API Usage
+## Socket API Usage ([Socket.IO](("https://socket.io/")))
 ---
 
 - __Single Symbol Price__
