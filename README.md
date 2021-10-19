@@ -42,15 +42,15 @@
 ## Request Flow
 ---
 
-![First Request]("https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/first.png")
+![First Request](https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/first.png)
 
 ---
 
-![Second Request (if data is in redis)]("https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/postgres.png")
+![Second Request (if data is in redis)](https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/postgres.png)
 
 ---
 
-![Second Request (if data is not in redis)]("https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/redis.png")
+![Second Request (if data is not in redis)](https://github.com/shaban00/cryptocompare-api/raw/master/screenshots/redis.png)
 
 
 
