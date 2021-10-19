@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  cryptocompare-api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '4000:4000'
+    environment:
+      DATABASE_NAME: cryptocompare
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      DATABASE_HOST: postgres
+      REDIS_HOST: redis
+    restart: 'unless-stopped'
+    networks:
+      - backend
+    depends_on:
+      - redis
+      - postgres
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: cryptocompare
+    volumes:
+      - ./table.sql:/docker-entrypoint-initdb.d/table.sql
+    networks:
+      - backend
+  redis:
+    image: redis
+    restart: always
+    command: ["redis-server", "--bind", "redis", "--port", "6379"]
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

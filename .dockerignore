@@ -1,0 +1,8 @@
+# compiled output
+.vscode
+/node_modules
+/screenshots
+
+# docker
+Dockerfile
+docker-compose.yml
