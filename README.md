@@ -1,42 +1,42 @@
-# Restful & Socket API for getting cryptocurrency prices from [CryptoCompare]("https://min-api.cryptocompare.com/")
+# Restful & Socket API for getting cryptocurrency prices from [CryptoCompare](https://min-api.cryptocompare.com/)
 
 
 ### Technologies used 🌟🌟🌍🌟🌟🌍🌟🌟
 ---
 
-- [__Node.js__]("https://nodejs.org/en/"): Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [__Node.js__](https://nodejs.org/en/): Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 
-- [__Express.js__]("https://expressjs.com/") : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+- [__Express.js__](https://expressjs.com/) : Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 
-- [__Typescript__]("https://www.typescriptlang.org/"): TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
+- [__Typescript__](https://www.typescriptlang.org/): TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
 
 
-- [__Ajv JSON schema validator__]("https://ajv.js.org/"): It allows implementing complex data validation logic via declarative schemas for your JSON data, without writing code.
+- [__Ajv JSON schema validator__](https://ajv.js.org/): It allows implementing complex data validation logic via declarative schemas for your JSON data, without writing code.
 
-- [__Axios__]("https://github.com/axios/axios"): Promise based HTTP client for the browser and node.js
-
-
-- [__CORS(Cross-Origin Resource Sharing)__]("https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"): Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
+- [__Axios__](https://github.com/axios/axios): Promise based HTTP client for the browser and node.js
 
 
-- [__Dotenv__]("https://www.npmjs.com/package/dotenv"): Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
+- [__CORS(Cross-Origin Resource Sharing)__](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS): Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources
 
 
-- [__Helmet__]("https://github.com/helmetjs/helmet"): Helmet helps you secure your Express apps by setting various HTTP headers
+- [__Dotenv__](https://www.npmjs.com/package/dotenv): Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env
 
 
-- [__PostgreSQL__]("https://www.postgresql.org/"): PostgreSQL is a powerful, open source object-relational database.
-
-- [__Redis__]("https://redis.io/"): Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker
+- [__Helmet__](https://github.com/helmetjs/helmet): Helmet helps you secure your Express apps by setting various HTTP headers
 
 
-- [__Sequelize__]("https://sequelize.org/"): Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.
+- [__PostgreSQL__](https://www.postgresql.org/): PostgreSQL is a powerful, open source object-relational database.
 
-- [__Socket.IO__]("https://socket.io/"): Bidirectional and low-latency communication for every platform
+- [__Redis__](https://redis.io/): Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker
 
-- [__Docker__]("https://www.docker.com/"): Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
+
+- [__Sequelize__](https://sequelize.org/): Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.
+
+- [__Socket.IO__](https://socket.io/): Bidirectional and low-latency communication for every platform
+
+- [__Docker__](https://www.docker.com/): Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels
 
 
 ## Request Flow
@@ -121,7 +121,7 @@ sign | boolean | No
 `Eg: http://localhost:4000/api/v1/pricemultifull?fsyms=BTC&tsyms=USD,EUR`
 
 
-## Socket API Usage ([Socket.IO](("https://socket.io/")))
+## Socket API Usage ([Socket.IO]((https://socket.io/)))
 ---
 
 - __Single Symbol Price__
@@ -263,7 +263,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 docker-compose up
 
-docker run --publish 8080:8080 docker-gs-ping
+docker run --publish 4000:4000 shaban00/cryptocompare-api
 
 ```
 
