@@ -6,3 +6,7 @@
 # docker
 Dockerfile
 docker-compose.yml
+
+
+# Environment variables
+.env
